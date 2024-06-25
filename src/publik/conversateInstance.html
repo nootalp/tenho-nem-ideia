@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+</head>
+<body>
+    <h1>Scale</h1>
+    <form id="note-form" method="post" action="/process-note">
+        <input id="note-input" type="text" name="root" placeholder="Tonic note" required> <br>
+        <input id="pattern-input" type="text" name="intervals" placeholder="Semitone scale-pattern" required> <br>
+        <input id="chord-input" type="text" name="chord_degree" placeholder="Chord degrees"> <br>
+            <button type="submit">Generate Note</button> <br>
+
+            <div id="preset-buttons"></div> <br>
+    
+            <script type="module" src="/Script/interval-pattern.js"></script>
+    </form>
+</body>
+</html>

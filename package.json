@@ -1,0 +1,30 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "config": "tsc -p ./tsconfig.json",
+    "dist": "tsc --downlevelIteration",
+    "play": "node ./dist/src/index.js",
+    "start": "cls & npm-run-all config dist play",
+    
+    "config:test": "tsc -p ./tsconfig.test.json",
+    "dist:test": "tsc --downlevelIteration",
+    "play:test": "node ./dist/test/index.test.js",
+    "test": "cls & npm-run-all config:test dist:test play:test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.1.0",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}

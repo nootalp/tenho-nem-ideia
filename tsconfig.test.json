@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig",
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "strict": true,
+        "downlevelIteration": true,
+        "outDir": "./dist/test",
+        "rootDir": "./test",
+    },
+    "include": ["test/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
